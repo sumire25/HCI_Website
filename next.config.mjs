@@ -9,6 +9,11 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  output: 'export',
+  distDir: 'dist',
+  basePath: '/HCI_Website',
+  assetPrefix: '/HCI_Website',
+  trailingSlash: true,
 }
 
 export default nextConfig
