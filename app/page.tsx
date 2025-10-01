@@ -26,23 +26,20 @@ export default function HomePage() {
 
         <div className="container relative mx-auto px-4 py-24 sm:py-32 z-10">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl text-balance drop-shadow-2xl">
-              Safe Yourself
-              <span className="block text-primary bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <h1 className="text-5xl font-bold tracking-tight text-foreground sm:text-7xl lg:text-8xl text-balance drop-shadow-2xl shadow-2xl">
+              Huye
+              <span className="block text-primary bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent drop-shadow-2xl">
                 Enfrenta tus Fobias
               </span>
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-foreground/90 text-pretty drop-shadow-lg">
-              Este es un proyecto de realidad virtual desarrollado por estudiantes del de Interacción Humano-Computadora
-              (HCI), con el objetivo de ofrecer una experiencia inmersiva en en el que tienes que enfrentar tus miedos
-            </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Button asChild size="lg" className="text-base horror-glow">
-                <Link href="/overview">Overview</Link>
-              </Button>
-              <Button variant="outline" asChild size="lg" className="text-base bg-transparent horror-glow">
-                <Link href="/team">Nuestro equipo</Link>
-              </Button>
+            <div className="mt-16 flex items-center justify-center">
+              <Link href="/vr-game" className="group">
+                <div className="relative w-32 h-32 rounded-full bg-white border-4 border-primary shadow-2xl transition-all duration-300 hover:scale-110 hover:shadow-3xl cursor-pointer flex items-center justify-center animate-bounce hover:animate-pulse">
+                  <div className="w-0 h-0 border-l-[28px] border-l-primary border-t-[20px] border-t-transparent border-b-[20px] border-b-transparent ml-2 drop-shadow-lg"></div>
+                  <div className="absolute inset-0 rounded-full bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 rounded-full border-2 border-accent animate-ping"></div>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
